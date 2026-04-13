@@ -7,29 +7,29 @@
 ID: TC-01
 Title: Verify user login with valid credentials
 
-Preconditions:
+- Preconditions:
 
 Login page is opened
 
-Steps:
+- Steps:
 
 Enter username: standard_user
 Enter password: secret_sauce
 Click "Login"
 
-Postconditions:
+- Postconditions:
 
 User is logged out
 
-Expected Result:
+- Expected Result:
 
 User is redirected to the products page
 
-Actual Result:
+- Actual Result:
 
 User successfully logged in and redirected
 
-Status:
+- Status:
 
 Passed
 
@@ -38,35 +38,34 @@ Passed
   ![Login Success](./screenshots/TC_01_success_login.png)
 ---
 
-- Steps:
 ### TC-02: Login with invalid password
 
 ID: TC-02
 Title: Verify login with invalid credentials
 
-Preconditions:
+- Preconditions:
 
 Login page is opened
 
-Steps:
+- Steps:
 
 Enter username: wrong_username
 Enter password: wrong_password
 Click "Login"
 
-Postconditions:
+- Postconditions:
 
 None
 
-Expected Result:
+- Expected Result:
 
 Error message is displayed
 
-Actual Result:
+- Actual Result:
 
 Error message displayed
 
-Status:
+- Status:
 
 Passed
 
@@ -79,29 +78,29 @@ Passed
 ID: TC-03
 Title: Verify login with empty fields
 
-Preconditions:
+- Preconditions:
 
 Login page is opened
 
-Steps:
+- Steps:
 
 Leave username empty
 Leave password empty
 Click "Login"
 
-Postconditions:
+- Postconditions:
 
 None
 
-Expected Result:
+- Expected Result:
 
 Validation error is displayed
 
-Actual Result:
+- Actual Result:
 
 Error message displayed
 
-Status:
+- Status:
 
 Passed
 
@@ -114,29 +113,29 @@ Passed
 ID: TC-04
 Title: Verify login with locked user
 
-Preconditions:
+- Preconditions:
 
 Login page is opened
 
-Steps:
+- Steps:
 
 Enter username: locked_out_user
 Enter password: secret_sauce
 Click "Login"
 
-Postconditions:
+- Postconditions:
 
 None
 
-Expected Result:
+- Expected Result:
 
 Error message about locked user
 
-Actual Result:
+- Actual Result:
 
 Error message displayed
 
-Status:
+- Status:
 
 Passed
 
@@ -149,28 +148,28 @@ Passed
 ID: TC-05
 Title: Verify logout functionality
 
-Preconditions:
+- Preconditions:
 
 User is logged in
 
-Steps:
+- Steps:
 
 Open menu
 Click "Logout"
 
-Postconditions:
+- Postconditions:
 
 User remains logged out
 
-Expected Result:
+- Expected Result:
 
 User is redirected to login page
 
-Actual Result:
+- Actual Result:
 
 User returned to login page
 
-Status:
+- Status:
 
 Passed
 
@@ -183,28 +182,28 @@ Passed
 ID: TC-06
 Title: Verify adding product to cart
 
-Preconditions:
+- Preconditions:
 
 User is logged in
 
-Steps:
+- Steps:
 
 Click "Add to cart"
 
-Postconditions:
+- Postconditions:
 
 Remove item from cart
 
-Expected Result:
+- Expected Result:
 
 Button changes to "Remove"
 Cart icon shows 1 item
 
-Actual Result:
+- Actual Result:
 
 Product added successfully
 
-Status:
+- Status:
 
 Passed
 
@@ -217,28 +216,28 @@ Passed
 ID: TC-07
 Title: Verify removing product from cart
 
-Preconditions:
+- Preconditions:
 
 Product is added to cart
 
-Steps:
+- Steps:
 
 Click "Remove"
 
-Postconditions:
+- Postconditions:
 
 None
 
-Expected Result:
+- Expected Result:
 
 Product removed from cart
 Cart count updated
 
-Actual Result:
+- Actual Result:
 
 Product removed successfully
 
-Status:
+- Status:
 
 Passed
 
@@ -252,27 +251,27 @@ Passed
 ID: TC-08
 Title: Verify opening product details
 
-Preconditions:
+- Preconditions:
 
 User is logged in
 
-Steps:
+- Steps:
 
 Click on product name
 
-Postconditions:
+- Postconditions:
 
 Return to products page
 
-Expected Result:
+- Expected Result:
 
 Product details page opens
 
-Actual Result:
+- Actual Result:
 
 Product page displayed
 
-Status:
+- Status:
 
 Passed
 
@@ -285,27 +284,27 @@ Passed
 ID: TC-09
 Title: Verify sorting products by price (low to high)
 
-Preconditions:
+- Preconditions:
 
 User is on products page
 
-Steps:
+- Steps:
 
 Select sorting option "Price (low to high)"
 
-Postconditions:
+- Postconditions:
 
 None
 
-Expected Result:
+- Expected Result:
 
 Products sorted by ascending price
 
-Actual Result:
+- Actual Result:
 
 Sorting works correctly
 
-Status:
+- Status:
 
 Passed
 
@@ -318,27 +317,27 @@ Passed
 ID: TC-10
 Title: Verify adding multiple products to cart
 
-Preconditions:
+- Preconditions:
 
 User is logged in
 
-Steps:
+- Steps:
 
 Add 1-2 products
 
-Postconditions:
+- Postconditions:
 
 Remove products from cart
 
-Expected Result:
+- Expected Result:
 
 Cart shows correct number of items
 
-Actual Result:
+- Actual Result:
 
 Items added correctly
 
-Status:
+- Status:
 
 Passed
 
@@ -351,27 +350,27 @@ Passed
 ID: TC-11
 Title: Verify opening cart page
 
-Preconditions:
+- Preconditions:
 
 User is logged in
 
-Steps:
+- Steps:
 
 Click cart icon
 
-Postconditions:
+- Postconditions:
 
 Return to products page
 
-Expected Result:
+- Expected Result:
 
 Cart page is displayed
 
-Actual Result:
+- Actual Result:
 
 Cart opened successfully
 
-Status:
+- Status:
 
 Passed
 
@@ -384,27 +383,27 @@ Passed
 ID: TC-12
 Title: Verify continue shopping from cart
 
-Preconditions:
+- Preconditions:
 
 User is in cart
 
-Steps:
+- Steps:
 
 Click "Continue Shopping"
 
-Postconditions:
+- Postconditions:
 
 None
 
-Expected Result:
+- Expected Result:
 
 User returns to products page
 
-Actual Result:
+- Actual Result:
 
 Navigation works correctly
 
-Status:
+- Status:
 
 Passed
 
@@ -417,11 +416,11 @@ Passed
 ID: TC-13
 Title: Verify checkout process
 
-Preconditions:
+- Preconditions:
 
 Product is in cart
 
-Steps:
+- Steps:
 
 Click "Checkout"
 Enter First Name
@@ -429,19 +428,19 @@ Enter Last Name
 Enter Zip code
 Click "Continue"
 
-Postconditions:
+- Postconditions:
 
 Order not completed
 
-Expected Result:
+- Expected Result:
 
 User proceeds to checkout overview
 
-Actual Result:
+- Actual Result:
 
 Navigation successful
 
-Status:
+- Status:
 
 Passed
 
@@ -455,28 +454,28 @@ Passed
 ID: TC-14
 Title: Verify checkout with empty fields
 
-Preconditions:
+- Preconditions:
 
 User is on checkout page
 
-Steps:
+- Steps:
 
 Leave fields empty
 Click "Continue"
 
-Postconditions:
+- Postconditions:
 
 None
 
-Expected Result:
+- Expected Result:
 
 Validation error displayed
 
-Actual Result:
+- Actual Result:
 
 Error message shown
 
-Status:
+- Status:
 
 Passed
 
@@ -489,27 +488,27 @@ Passed
 ID: TC-15
 Title: Verify order completion
 
-Preconditions:
+- Preconditions:
 
 User is on checkout overview page
 
-Steps:
+- Steps:
 
 Click "Finish"
 
-Postconditions:
+- Postconditions:
 
 User returned to main page
 
-Expected Result:
+- Expected Result:
 
 Order success message displayed
 
-Actual Result:
+- Actual Result:
 
 Order completed successfully
 
-Status:
+- Status:
 
 Passed
 
