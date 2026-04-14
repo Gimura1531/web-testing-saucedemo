@@ -1,34 +1,4 @@
-## BUG-01: Login error message is not user-friendly
-
-- Environment:
-
-Browser: Google Chrome
-OS: macOS / Windows
-URL: https://www.saucedemo.com/
-
-- Steps to Reproduce:
-
-Open the login page
-Enter invalid credentials (e.g., username: wrong_user, password: wrong_pass)
-Click "Login"
-
-- Expected Result:
-
-A clear and user-friendly error message is displayed (e.g., "Invalid username or password")
-
-- Actual Result:
-
-Error message displayed:
-"Epic sadface: Username and password do not match any user in this service"
-
-- Type: UX Issue / Improvement
-Severity: Low
-Priority: Low
-
-- Screenshot:
-  ![Login with invalid password](./screenshots/TC_02_invalid_pasword_name.png)
-
-## BUG-02: Checkout form allows invalid data without validation
+## BUG-01: Checkout form allows invalid data without validation
 
 - Environment:
 
